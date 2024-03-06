@@ -1,7 +1,6 @@
 # Gravitee-io - Renovate Config
 
-Here you can define shared renovate presets to be reused later from other repositories 
-as described [here](https://docs.renovatebot.com/config-presets/)
+Shared [renovate presets](https://docs.renovatebot.com/config-presets/) used by Gravitee.io repositories.
 
 ## Defining presets
 
