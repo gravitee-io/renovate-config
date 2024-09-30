@@ -2,6 +2,8 @@
 
 Shared [renovate presets](https://docs.renovatebot.com/config-presets/) used by Gravitee.io repositories.
 
+[Slab page](https://gravitee.slab.com/posts/renovate-keeping-up-to-date-gz65c5er)
+
 ## Defining presets
 
 To define a `lib` presets, add a `lib.json` file to this repository.
@@ -30,6 +32,9 @@ To reuse the lib preset just define your `.github/renovate.json` file as follows
 }
 ```
 
+## Available presets
 
-
-
+- `default`: Default preset for all Gravitee.io repositories.
+- `lib`: Base preset for Gravitee.io library repositories.
+- `policy`: Base preset for Gravitee.io policy repositories.
+- `federationagent`: Base preset for Gravitee.io Federation Agent repositories.
