@@ -1,0 +1,34 @@
+{
+    "extends": [
+        ":ignoreModulesAndTests",
+        "group:monorepos",
+        "group:recommended",
+        ":label(dependencies)",
+        "local>gravitee-io/renovate-config:private_artifactory"
+    ],
+    "rebaseWhen": "conflicted",
+    "prConcurrentLimit": 5,
+    "prCreation": "not-pending",
+    "commitMessageTopic": "{{depName}}",
+    "packageRules": [
+        {
+            "matchDatasources": ["orb"],
+            "matchUpdateTypes": ["patch", "minor"],
+            "automerge": true,
+            "automergeType": "branch",
+            "semanticCommitType": "ci"
+        },
+        {
+            "matchDepTypes": ["provided", "test", "build", "import", "parent"],
+            "matchUpdateTypes": ["patch", "minor"],
+            "automerge": true,
+            "automergeType": "branch",
+            "semanticCommitType": "chore"
+        },
+        {
+            "matchDepTypes": ["provided", "test", "build", "import", "parent"],
+            "matchUpdateTypes": ["major"],
+            "semanticCommitType": "chore"
+        }
+    ]
+}
