@@ -1,5 +1,5 @@
 {
-    "extends": ["config:base", ":label(dependencies)"],
+    "extends": ["config:base", ":label(dependencies)", "local>gravitee-io/renovate-config:private_artifactory"],
     "rebaseWhen": "conflicted",
     "prConcurrentLimit": 5,
     "prCreation": "not-pending",
