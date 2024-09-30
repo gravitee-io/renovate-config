@@ -1,3 +1,9 @@
 {
-    "extends": ["local>gravitee-io/renovate-config"]
+    "extends": ["local>gravitee-io/renovate-config"],
+    "packageRules": [
+        {
+            "matchPackageNames": ["gravitee-federation-agent"],
+            "extends": [":semanticCommitTypeAll(fix)"]
+        }
+    ]
 }
