@@ -1,0 +1,17 @@
+{
+    "hostRules": [
+        {
+            "matchHost": "https://odbxikk7vo-artifactory.services.clever-cloud.com",
+            "token": "{{ secrets.ARTIFACTORY_TOKEN }}"
+        }
+    ],
+    "packageRules": [
+        {
+            "matchDatasources": ["maven"],
+            "registryUrls": [
+                "https://odbxikk7vo-artifactory.services.clever-cloud.com/gravitee-releases",
+                "https://repo.maven.apache.org/maven2"
+            ]
+        }
+    ]
+}
