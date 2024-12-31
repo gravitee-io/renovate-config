@@ -36,5 +36,7 @@ To reuse the lib preset just define your `.github/renovate.json` file as follows
 
 - `default`: Default preset for all Gravitee.io repositories.
 - `lib`: Base preset for Gravitee.io library repositories.
-- `policy`: Base preset for Gravitee.io policy repositories.
+- `plugin`: Base preset for any Gravitee.io plugin repositories (policy, reporter, endpoint, entrypoint...).
+- <del>`policy`: Base preset for Gravitee.io policy repositories.</del> Use `plugin` instead
+- <del>`reporter`: Base preset for Gravitee.io reporter repositories.</del> Use `plugin` instead
 - `federationagent`: Base preset for Gravitee.io Federation Agent repositories.
