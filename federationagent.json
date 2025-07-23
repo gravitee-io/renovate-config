@@ -2,8 +2,10 @@
     "extends": ["local>gravitee-io/renovate-config"],
     "packageRules": [
         {
-            "matchPackageNames": ["gravitee-federation-agent"],
-            "extends": [":semanticCommitTypeAll(fix)"]
+            "description": "update on gravitee-federation-agent should trigger a release",
+            "matchManagers": ["maven"],
+            "matchPackagePatterns": ["com.graviteesource.federation.agent:*"],
+            "semanticCommitType": "fix"
         }
     ]
 }
