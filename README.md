@@ -40,3 +40,4 @@ To reuse the lib preset just define your `.github/renovate.json` file as follows
 - <del>`policy`: Base preset for Gravitee.io policy repositories.</del> Use `plugin` instead
 - <del>`reporter`: Base preset for Gravitee.io reporter repositories.</del> Use `plugin` instead
 - `federationagent`: Base preset for Gravitee.io Federation Agent repositories.
+- `gamma-module`: Base preset for Gravitee.io Gamma Module repositories.
