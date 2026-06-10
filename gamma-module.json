@@ -1,0 +1,29 @@
+{
+    "extends": ["local>gravitee-io/renovate-config:plugin"],
+    "packageRules": [
+        {
+            "matchManagers": ["npm"],
+            "rangeStrategy": "pin"
+        },
+        {
+            "matchManagers": ["npm"],
+            "matchDepTypes": ["devDependencies"],
+            "matchUpdateTypes": ["patch", "minor"],
+            "automerge": true,
+            "automergeType": "branch",
+            "groupName": "frontend devDependencies (non-major)"
+        },
+        {
+            "matchManagers": ["npm"],
+            "matchUpdateTypes": ["patch", "minor"],
+            "matchPackagePatterns": ["^eslint", "^@types/", "^prettier"],
+            "groupName": "frontend lint & types"
+        },
+        {
+            "matchManagers": ["npm"],
+            "matchUpdateTypes": ["patch", "minor"],
+            "matchPackagePatterns": ["^@testing-library/", "^vitest", "^@vitest/", "^jsdom"],
+            "groupName": "frontend testing"
+        }
+    ]
+}
