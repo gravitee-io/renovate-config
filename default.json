@@ -13,7 +13,8 @@
     "packageRules": [
         {
             "matchDatasources": ["maven"],
-            "commitMessageTopic": "{{{replace '^.*:' '' depName}}}"
+            "commitMessageTopic": "{{{replace '^.*:' '' depName}}}",
+            "commitBody": "Package: {{depName}}"
         },
         {
             "matchDatasources": ["orb"],
