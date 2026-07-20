@@ -12,6 +12,10 @@
     "commitMessageTopic": "{{depName}}",
     "packageRules": [
         {
+            "matchDatasources": ["maven"],
+            "commitMessageTopic": "{{{replace '^.*:' '' depName}}}"
+        },
+        {
             "matchDatasources": ["orb"],
             "matchUpdateTypes": ["patch", "minor"],
             "automerge": true,
