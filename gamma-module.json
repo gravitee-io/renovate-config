@@ -24,6 +24,18 @@
             "matchUpdateTypes": ["patch", "minor"],
             "matchPackagePatterns": ["^@testing-library/", "^vitest", "^@vitest/", "^jsdom"],
             "groupName": "frontend testing"
+        },
+        {
+            "matchManagers": ["npm"],
+            "matchPackageNames": ["@gravitee/graphene-core", "@gravitee/graphene-charts", "@gravitee/graphene-policy-studio"],
+            "groupName": "graphene",
+            "semanticCommitType": "fix"
+        },
+        {
+            "matchManagers": ["npm"],
+            "matchPackageNames": ["@gravitee/gamma-lib-observability"],
+            "groupName": "gamma-lib-observability",
+            "semanticCommitType": "fix"
         }
     ]
 }
