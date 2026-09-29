@@ -19,6 +19,8 @@
         {
             "matchDatasources": ["orb"],
             "matchUpdateTypes": ["patch", "minor"],
+            "prConcurrentLimit": 0,
+            "prHourlyLimit": 0,
             "automerge": true,
             "automergeType": "branch",
             "semanticCommitType": "ci"
