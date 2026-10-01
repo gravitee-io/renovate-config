@@ -6,7 +6,7 @@
         ":label(dependencies)",
         "local>gravitee-io/renovate-config:private_artifactory"
     ],
-    "rebaseWhen": "conflicted",
+    "rebaseWhen": "auto",
     "prConcurrentLimit": 5,
     "prCreation": "not-pending",
     "commitMessageTopic": "{{depName}}",
