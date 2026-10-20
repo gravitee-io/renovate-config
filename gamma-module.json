@@ -7,6 +7,11 @@
         },
         {
             "matchManagers": ["npm"],
+            "matchPackageNames": ["!@gravitee/**"],
+            "minimumReleaseAge": "1 day"
+        },
+        {
+            "matchManagers": ["npm"],
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["patch", "minor"],
             "automerge": true,
