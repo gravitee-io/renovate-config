@@ -36,6 +36,12 @@
             "matchDepTypes": ["provided", "test", "build", "import", "parent"],
             "matchUpdateTypes": ["major"],
             "semanticCommitType": "chore"
+        },
+        {
+            "matchManagers": ["npm"],
+            "matchPackageNames": ["!@gravitee/**", "!@gravitee-io/**"],
+            "matchUpdateTypes": ["major", "minor", "patch"],
+            "minimumReleaseAge": "1 day"
         }
     ]
 }
