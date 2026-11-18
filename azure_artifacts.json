@@ -1,0 +1,18 @@
+{
+    "hostRules": [
+        {
+            "matchHost": "https://pkgs.dev.azure.com/graviteeio/",
+            "username": "renovate-ro",
+            "password": "{{ secrets.AZURE_ARTIFACTS_PAT }}"
+        }
+    ],
+    "packageRules": [
+        {
+            "matchDatasources": ["maven"],
+            "registryUrls": [
+                "https://pkgs.dev.azure.com/graviteeio/packages/_packaging/gravitee/maven/v1",
+                "https://repo.maven.apache.org/maven2"
+            ]
+        }
+    ]
+}

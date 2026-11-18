@@ -4,7 +4,7 @@
         "group:monorepos",
         "group:recommended",
         ":label(dependencies)",
-        "local>gravitee-io/renovate-config:private_artifactory"
+        "local>gravitee-io/renovate-config:azure_artifacts"
     ],
     "rebaseWhen": "auto",
     "prConcurrentLimit": 5,
